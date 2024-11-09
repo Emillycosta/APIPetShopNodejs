@@ -1,11 +1,13 @@
 // Não é mais tudo !!!!
 const express = require('express')
-const routers = require('./src/routes/cliente')
+const routers = requireUsuario('./src/routes/usuario')
+const routers = require ('./src/routes/cachorro')
+
 const database = require('./src/config/database')
 
 const app = express()
-app.use(express.json())
-app.use(routers)
+app.use("/client", routersUsuario)
+app.use("/dog", routers)
 const PORT = 3000
 
 database.db
