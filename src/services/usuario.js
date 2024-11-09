@@ -21,7 +21,7 @@ class ServiceUsuario {
             throw new Error("Pessoa não encontrada")
         }
         Usuario.name = name ||Usuario .name
-        Usuario .password = password || Usuario.password
+        Usuario.password = password || Usuario.password
         Usuario.email = email || Usuario.email
 
         Usuario.save()
